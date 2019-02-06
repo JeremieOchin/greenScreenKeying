@@ -34,3 +34,5 @@ I have setup a basic Convolutionnal Neural Net to learn how to predict the trans
 - fifth layer : convolution layer of kernel size 1x1 with output 1 feature map, and activation Sigmoid to get the transparency between 0 and 1.
 
 The training has last 2 hours for 100 epochs. I will publish the results on a test set that the CNN has never seen at all during the training.
+
+I already shared the trained netwrok if you want to test it.
