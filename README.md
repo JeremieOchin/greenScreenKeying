@@ -36,3 +36,11 @@ I have setup a basic Convolutionnal Neural Net to learn how to predict the trans
 The training has last 2 hours for 100 epochs. I will publish the results on a test set that the CNN has never seen at all during the training.
 
 I already shared the trained netwrok if you want to test it.
+
+ENVIRONMENT :
+Windows 7
+Python 3.6.8
+Numpy 1.15.4
+OpenCV 3.4.1
+Tensorflow(-gpu) 1.12.0
+
