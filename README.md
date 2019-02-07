@@ -18,7 +18,9 @@ Images are given with a PNG format, easily readable by OpenCV (and probably Tens
 
 I have used footage from the online training company FXPHD, because I could get those PNG but also have the "alpha channel", which is a 4th channel that contain the degree of transparency of a given pixel (same as above, I convert it to float to get a value between 0 and 1).
 
-I have setup a basic Convolutionnal Neural Net to learn how to predict the transparency of each pixel :*
+### First attempt
+
+I have setup a basic Convolutionnal Neural Net to learn how to predict the transparency of each pixel :
 
 - Inputs : I read batches of 4 images Full HD (1920 x 1080 x 3 channels). I split them in 9 (3 x 3) using OpenCV, for memory purposes. I then recombine the output.
 
@@ -32,7 +34,7 @@ I have setup a basic Convolutionnal Neural Net to learn how to predict the trans
 
 - fifth layer : convolution layer of kernel size 1x1 with output 1 feature map, and activation Sigmoid to get the transparency between 0 and 1.
 
-The training has last 2 hours for 100 epochs. I will publish the results on a test set that the CNN has never seen at all during the training.
+The training has last 2 hours for 100 epochs.
 
 I already shared the trained netwrok if you want to test it.
 
@@ -43,3 +45,22 @@ Numpy 1.15.4
 OpenCV 3.4.1  
 Tensorflow(-gpu) 1.12.0  
 
+**Results** :
+
+Here is a sample of the training set :
+
+**Input image : **
+
+![RGB Image from the training set](https://previews.dropbox.com/p/thumb/AAUWD4PGJsmIw9JSJYi1rfxHmYWb-n6nMgkuGGXXSiLMhChQJE_XUtbExYLa7b1IA54OaAlM_joQzLzNR_QuHnkvunMHnw10N3GUIlEAoSjC2npDQ98GPQtzQl2YygywZwmIR57kU3hqbXQyYwjLvOsR_tKjHe88MitY4W3oNoi0XSRLL9sgSQF-DTi6n_8KGRg17AZJSVIg3SZSrd3l9df6FM2Rjr5niTY3FySDpxGsvA4T0EjFZWaTRybZxgzCPF0/p.png?size_mode=5)
+
+**Alpha from training set : **
+
+![Alpha from training set](https://previews.dropbox.com/p/thumb/AAXEcazIAq1VZPsJsXrkPLO8df3BtkxQO0D_x0xGdVYaIejbxHGiWXWMcJUwXYFSfVIUZ2ttPqS3XDis8F35q_m1NDpKcgjyoF8eovrjbLu9i7mXmOJbuUfQVuAPEWzzOpTbXNU3bn_hNVLWyr-giZoS49rSjQml7yQDzqmB_cYrQt7Fsi5TtcfnTLqQltktv7EZaZwAgqcOQfHQ0j78c-brdlWo90pPDuDVwFRVfxRRQg/p.png?size_mode=5)
+
+**Alpha obtained after training : **
+
+![Resulting alpha](https://previews.dropbox.com/p/thumb/AAVoepWNXLSEsr3iy4AC2vHsDAi-zy9X_wXkv9zoTsTZrXKfhRYyru5kMP3VyB_prhU3Hk_2zBm_NqT-1lr1IE0_k0ZYTU3l2f0NLLpT-7m74gqVy7GIY53_m8oMiEB2zbbw_fgX0fR-b9KFqJY1-G1q1x98EkrhtUxMMfUiqL6dRSoIpmiXwuLR7Gal9h1IwgZAogEOBkQoiZp6cYkhsWhzObOEApQckw4H5aQCAcCbxg/p.png?size_mode=5)
+
+**Learned kernels of the first layer after maxpooling : **
+
+![kernels after maxpooling](https://previews.dropbox.com/p/thumb/AAW_XpacCDG-bnehT7GSxEyXaeXAHjlO5t370H0T6AEtc1F9LuyzBVfcKfFHwe70YUxDHzwzpSqtpD0M_Pl4SVcEsOJFXAUDMKlMTdCbLJ5IX7MMliO_yxcq8cgzBV804OgSMJmPOFdDDDj1VhBDsUE_dQRmRIPGZWUQ1jjYReDTTi0flphbhdieHk_Lb8Sb63laEo7X5-7odoj4YgGZvplzKJMQbU3zPMcMS0ckaKVOOg/p.png?size_mode=5)
