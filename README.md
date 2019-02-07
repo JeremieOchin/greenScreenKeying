@@ -14,7 +14,6 @@ So compositors usually use various "keyers" for a same shot, and then have to ma
 ==> Could a CNN perform faster than a human on keying if we provide him good examples ? COuld it reach a sufficient level of quality in this process ?
 
 ##How does it work ?
-
 Images are given with a PNG format, easily readable by OpenCV (and probably Tensorflow, but I used OpenCV for knowing it better). Those images contain 3 channels (Red, Green and Blue), coded on 8 bit. I later convert them to float by dividing by 255, to get a value between 0 and 1.
 
 I have used footage from the online training company FXPHD, because I could get those PNG but also have the "alpha channel", which is a 4th channel that contain the degree of transparency of a given pixel (same as above, I convert it to float to get a value between 0 and 1).
