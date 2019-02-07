@@ -51,16 +51,16 @@ Here is a sample of the training set :
 
 **Input image : **
 
-![RGB Image from the training set](https://previews.dropbox.com/p/thumb/AAUWD4PGJsmIw9JSJYi1rfxHmYWb-n6nMgkuGGXXSiLMhChQJE_XUtbExYLa7b1IA54OaAlM_joQzLzNR_QuHnkvunMHnw10N3GUIlEAoSjC2npDQ98GPQtzQl2YygywZwmIR57kU3hqbXQyYwjLvOsR_tKjHe88MitY4W3oNoi0XSRLL9sgSQF-DTi6n_8KGRg17AZJSVIg3SZSrd3l9df6FM2Rjr5niTY3FySDpxGsvA4T0EjFZWaTRybZxgzCPF0/p.png?size_mode=5)
+![RGB Image from the training set](https://www.dropbox.com/s/ngawy2oygqy4rjx/Data.01.RGB.0063.png?dl=0)
 
 **Alpha from training set : **
 
-![Alpha from training set](https://previews.dropbox.com/p/thumb/AAXEcazIAq1VZPsJsXrkPLO8df3BtkxQO0D_x0xGdVYaIejbxHGiWXWMcJUwXYFSfVIUZ2ttPqS3XDis8F35q_m1NDpKcgjyoF8eovrjbLu9i7mXmOJbuUfQVuAPEWzzOpTbXNU3bn_hNVLWyr-giZoS49rSjQml7yQDzqmB_cYrQt7Fsi5TtcfnTLqQltktv7EZaZwAgqcOQfHQ0j78c-brdlWo90pPDuDVwFRVfxRRQg/p.png?size_mode=5)
+![Alpha from training set](https://www.dropbox.com/s/2xz5owz8x8betgc/Data.01.ALPHA.0063.png?dl=0)
 
 **Alpha obtained after training : **
 
-![Resulting alpha](https://previews.dropbox.com/p/thumb/AAVoepWNXLSEsr3iy4AC2vHsDAi-zy9X_wXkv9zoTsTZrXKfhRYyru5kMP3VyB_prhU3Hk_2zBm_NqT-1lr1IE0_k0ZYTU3l2f0NLLpT-7m74gqVy7GIY53_m8oMiEB2zbbw_fgX0fR-b9KFqJY1-G1q1x98EkrhtUxMMfUiqL6dRSoIpmiXwuLR7Gal9h1IwgZAogEOBkQoiZp6cYkhsWhzObOEApQckw4H5aQCAcCbxg/p.png?size_mode=5)
+![Resulting alpha](https://www.dropbox.com/s/93rjwcmv3pyelas/reconstructedAlpha.png?dl=0)
 
 **Learned kernels of the first layer after maxpooling : **
 
-![kernels after maxpooling](https://previews.dropbox.com/p/thumb/AAW_XpacCDG-bnehT7GSxEyXaeXAHjlO5t370H0T6AEtc1F9LuyzBVfcKfFHwe70YUxDHzwzpSqtpD0M_Pl4SVcEsOJFXAUDMKlMTdCbLJ5IX7MMliO_yxcq8cgzBV804OgSMJmPOFdDDDj1VhBDsUE_dQRmRIPGZWUQ1jjYReDTTi0flphbhdieHk_Lb8Sb63laEo7X5-7odoj4YgGZvplzKJMQbU3zPMcMS0ckaKVOOg/p.png?size_mode=5)
+![kernels after maxpooling](https://www.dropbox.com/s/kr83gbaik4o3j7l/kernel_gsc_01.png?dl=0)
