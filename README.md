@@ -51,7 +51,7 @@ Here is a sample of the training set :
 
 **Input image : **
 
-![RGB Image from the training set](https://www.dropbox.com/s/ngawy2oygqy4rjx/Data.01.RGB.0063.png?dl=0)
+![RGB Image from the training set](https://www.dropbox.com/s/ngawy2oygqy4rjx/Data.01.RGB.0063.png?raw=1)
 
 **Alpha from training set : **
 
