@@ -36,7 +36,7 @@ I have setup a basic Convolutionnal Neural Net to learn how to predict the trans
 
 The training has last 2 hours for 100 epochs.
 
-I already shared the trained netwrok if you want to test it.
+I already shared the trained network if you want to test it.
 
 ENVIRONMENT :
 Windows 7  
