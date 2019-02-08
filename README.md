@@ -61,6 +61,6 @@ Here is a sample of the training set :
 
 ![Resulting alpha](https://www.dropbox.com/s/93rjwcmv3pyelas/reconstructedAlpha.png?raw=1)
 
-**Learned kernels of the first layer after maxpooling : **
+**Learned kernels of the first layer : **
 
-![kernels after maxpooling](https://www.dropbox.com/s/kr83gbaik4o3j7l/kernel_gsc_01.png?raw=1)
+![kernels first layer](https://www.dropbox.com/s/kr83gbaik4o3j7l/kernel_gsc_01.png?raw=1)
