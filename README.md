@@ -55,12 +55,12 @@ Here is a sample of the training set :
 
 **Alpha from training set : **
 
-![Alpha from training set](https://www.dropbox.com/s/2xz5owz8x8betgc/Data.01.ALPHA.0063.png?dl=0)
+![Alpha from training set](https://www.dropbox.com/s/2xz5owz8x8betgc/Data.01.ALPHA.0063.png?raw=1)
 
 **Alpha obtained after training : **
 
-![Resulting alpha](https://www.dropbox.com/s/93rjwcmv3pyelas/reconstructedAlpha.png?dl=0)
+![Resulting alpha](https://www.dropbox.com/s/93rjwcmv3pyelas/reconstructedAlpha.png?raw=1)
 
 **Learned kernels of the first layer after maxpooling : **
 
-![kernels after maxpooling](https://www.dropbox.com/s/kr83gbaik4o3j7l/kernel_gsc_01.png?dl=0)
+![kernels after maxpooling](https://www.dropbox.com/s/kr83gbaik4o3j7l/kernel_gsc_01.png?raw=1)
