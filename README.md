@@ -38,7 +38,7 @@ The training has last 2 hours for 100 epochs.
 
 I already shared the trained network if you want to test it.
 
-ENVIRONMENT :
+ENVIRONMENT :  
 Windows 7  
 Python 3.6.8  
 Numpy 1.15.4  
