@@ -77,4 +77,8 @@ The results shows that the CNN has a hard time figuring out the parts of the alp
 
 My alpha being coded on 8 bits (256 values), maybe the CNN can learn to "classify" each pixel into 256 "classes of transaprency" ?
 
-I have therefore created another network for that purposes : it outputs for each pixel 256 probabilities of belonging to one of those classes.
+I have therefore created another network for that purposes : it outputs for each pixel 256 probabilities of belonging to one of those classes. It should improve the ability of the network to output the correct pure black / pure white classes, although it may be more complex to get the right intermediary values...
+
+Now the CNN has the following structure :
+
+
