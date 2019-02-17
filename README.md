@@ -18,7 +18,7 @@ Images are given with a PNG format, easily readable by OpenCV (and probably Tens
 
 I have used footage from the online training company FXPHD, because I could get those PNG but also have the "alpha channel", which is a 4th channel that contain the degree of transparency of a given pixel (same as above, I convert it to float to get a value between 0 and 1).
 
-### First attempt
+### First attempt : regression
 
 I have setup a basic Convolutionnal Neural Net to learn how to predict the transparency of each pixel :
 
@@ -71,3 +71,10 @@ Here is a sample of the training set :
 
 ![Resulting alpha from network](https://www.dropbox.com/s/avu3e7p51wsn6pv/resTestGPUregv2.png?raw=1)
 
+### Change of approach : classification problem
+
+The results shows that the CNN has a hard time figuring out the parts of the alpha that should be pitch black or totally white, leaving the intermediary values only for smoothly defined hedges (like hairs and whatnot).
+
+My alpha being coded on 8 bits (256 values), maybe the CNN can learn to "classify" each pixel into 256 "classes of transaprency" ?
+
+I have therefore created another network for that purposes : it outputs for each pixel 256 probabilities of belonging to one of those classes.
