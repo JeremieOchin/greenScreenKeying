@@ -69,5 +69,5 @@ Here is a sample of the training set :
 
 ![RGB Test for Generalization](https://www.dropbox.com/s/kbl1amfo0intqbi/testFootage.0001.png?raw=1)
 
-![Resulting alpha from network](https://www.dropbox.com/s/kbl1amfo0intqbi/testFootage.0001.png?raw=1)
+![Resulting alpha from network](https://www.dropbox.com/s/avu3e7p51wsn6pv/resTestGPUregv2.png?raw=1)
 
