@@ -64,3 +64,10 @@ Here is a sample of the training set :
 **Learned kernels of the first layer : **
 
 ![kernels first layer](https://www.dropbox.com/s/kr83gbaik4o3j7l/kernel_gsc_01.png?raw=1)
+
+**Test on a sequence the Network has not seen before to test generalization : **
+
+![RGB Test for Generalization](https://www.dropbox.com/s/kbl1amfo0intqbi/testFootage.0001.png?raw=1)
+
+![Resulting alpha from network](https://www.dropbox.com/s/kbl1amfo0intqbi/testFootage.0001.png?raw=1)
+
