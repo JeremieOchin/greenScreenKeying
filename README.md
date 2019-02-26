@@ -103,7 +103,7 @@ Stream 1 :
 
 - nineth layer : convolution layer of kernel size 5x5, stride 1x1 that produces 64 feature maps. Activation ReLu as well.
 
-Strem 2 :
+Stream 2 :
 
 - unique layer : convolution layer of kernel size 1x1, stride 1x1 that produces 128 feature maps. Activation ReLu.
 
