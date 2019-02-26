@@ -79,6 +79,39 @@ My alpha being coded on 8 bits (256 values), maybe the CNN can learn to "classif
 
 I have therefore created another network for that purposes : it outputs for each pixel 256 probabilities of belonging to one of those classes. It should improve the ability of the network to output the correct pure black / pure white classes, although it may be more complex to get the right intermediary values...
 
-Now the CNN has the following structure :
+Now the CNN has the following structure, with two streams from the input :
 
+- Inputs : I read batches of 8 elements of images Full HD (1920 x 1080 x 3 channels). Each element is 1/16 of the full HD initial image, in order to save memory (the network is trained on a Quadro K6000 that has 12 Gb of memory).
+
+Stream 1 :
+
+- first layer : convolution with a kernel size of 7 x 7 pixels, a stride of 1 x 1 (same resolution) and activation ReLu. That layer gives me 64 features map.
+
+- second layer : maxpooling, with a stride of 2 and size of 3.
+
+- third layer : local response normalization with depth 5
+
+- fourth layer : convolution layer of kernel size 1x1, stride 1x1 that produces 128 feature maps. Activation ReLu
+
+- fifth layer : convolution layer of kernel size 3x3, stride 2x2 that produces 128 feature maps. Activation ReLu.
+
+- sixth layer : local response normalization with depth 5
+
+- seventh layer : maxpooling, with a stride of 2 and size of 3.
+
+- eigth layer : resize of the tensor to the original size (1/16 of Full HD format)
+
+- nineth layer : convolution layer of kernel size 5x5, stride 1x1 that produces 64 feature maps. Activation ReLu as well.
+
+Strem 2 :
+
+- unique layer : convolution layer of kernel size 1x1, stride 1x1 that produces 128 feature maps. Activation ReLu.
+
+Merging of the 2 streams with a concatenation of both tensors (that have the same size)
+
+Then a final convolution layer of kernel size 1x1, stride 1x1 that produces 256 feature maps. Activation ReLu.
+
+The data for the training is made creating a OneHot tensor from the alpha channel of the data set : it is therefore of dimension (1/16 of 1920 x 1080) x 256 : each pixel of the alpha channel is used to encode a vector of length 256, "filled" with 0 everywhere except a "1" on the i-th coordinate when the value of the pixel is "i" (with 0 <= i <= 255). The alpha is coded on 8 bit.
+
+Then the objective function is evaluated using a softmax cross entropy layer. NOTE : I may have to change the ReLu activation on my last convolution layer, to get proper "logits".
 
